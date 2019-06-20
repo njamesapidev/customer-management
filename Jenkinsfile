@@ -26,7 +26,7 @@ pipeline {
             
             steps {
                 sh '''
-					docker login -u "njamesapidev" -p "Test1234@"
+					docker login -u "<Username>" -p "<password>"
                     docker build --no-cache -t customermanagement .
                     docker tag customermanagement:latest njamesapidev/customermanagement:latest 
                     docker push njamesapidev/customermanagement:latest
