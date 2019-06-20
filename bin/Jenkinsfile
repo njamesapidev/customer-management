@@ -1,14 +1,8 @@
-pipeline {
-    agent any    
-    tools {
-        maven 'maven'
-        jdk 'jdk8'
-    }
-	stages {
+node {
+    withMaven(maven:'maven') {
+
         stage('Checkout') {
-            steps {
-            	checkout scm
-        	}
+            checkout scm
         }
 
         stage('Build') {
