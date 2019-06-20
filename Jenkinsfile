@@ -23,7 +23,7 @@ pipeline {
         }
         
         stage('Deploy Docker image') {
-            when { buildingTag() }
+            
             steps {
                 sh '''
 					docker login -u "njamesapidev" -p "Test1234@"
