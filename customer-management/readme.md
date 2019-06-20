@@ -1,9 +1,7 @@
-# Customer Management Application
-
-## Understanding the Customer Management application
+# Customer Management REST API
 
 ## Running Customer Management Application locally
-Customer Management Application is a https://spring.io/guides/gs/spring-boot[Spring Boot] application built using https://spring.io/guides/gs/maven/[Maven]. You can build a jar file and run it from the command line:
+Customer Management Application is a https://spring.io/guides/gs/spring-boot [Spring Boot] application built using https://spring.io/guides/gs/maven/ [Maven]. You can build a jar file and run it from the command line:
 
 
 ```
@@ -36,10 +34,11 @@ The following are the prerequisites to be installed:
 ```
 git clone https://github.com/njamesapidev/customer-management.git
 ```
+
 2) Inside Eclipse or STS
 ```
-File -> Import -> Maven -> Existing Maven project```
-
+File -> Import -> Maven -> Existing Maven project
+```
 Then either build using the command line `./mvnw generate-resources` or using the Eclipse launcher (right click on project and `Run As -> Maven install`) to run. Run the application main method by right clicking and choosing `Run As -> Spring Boot App`.
 
 3) Navigate to Customer Management Application API documentation
