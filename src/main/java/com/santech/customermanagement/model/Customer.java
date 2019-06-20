@@ -18,7 +18,7 @@ import io.swagger.annotations.ApiModelProperty;
 public class Customer {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "account_number")
 	@ApiModelProperty(hidden = true) 
 	private Long accountNumber;
